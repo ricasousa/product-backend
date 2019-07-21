@@ -8,8 +8,6 @@ Para este projeto, o PostgreSQL foi instalado via brew(Homebre).
 $ brew install postgres
 ```
 
-O comando abaixo é responsável por "start" o servidor.
-
 ## Start PostgreSQL server
 
 ```bash
@@ -31,11 +29,30 @@ $ initdb /usr/local/var/postgres
 ## Create a new database
 
 ```bash
-$ createdb postgis_test
+$ createdb [dbname]
 ```
 
 ## Enable PostGIS
 
 ```bash
-$ psql postgis_test
+$ psql [dbname]
 ```
+
+## Command Line Utility
+
+createuser [username] --superuser --createdb
+
+createdb [dbname] --owner="owner" --password -U [username]
+: When pass ``--password``s force createdb to prompt for a password before connecting to a database.
+
+dropuser: deletes a user
+dropdb: deletes a database
+
+## psql commands
+
+\du: List all users
+\l | \list: List all databases
+\d: List all tables on connected database
+\d [tableName]: Shows the table schema
+\password [username]: Set a new password for the username
+\c dbname: Connect to another database
