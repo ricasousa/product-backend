@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const port = 3000;
 const userRouter = require('./app/routes/user');
+const sequelize = require('./config');
 
 // for parsing application/json
 app.use(express.json());
@@ -21,6 +22,17 @@ app.post('/test/:userId', (req, res) => {
 app.use('/user', userRouter);
 
 app.use(express.static('app/index.html'));
+
+sequelize
+  .authenticate()
+  .then(() => {
+    console.log('Connection has been established successfully.');
+
+    sequelize.close();
+  })
+  .catch(err => {
+    console.error('Unable to connect to the database:', err);
+  });
 
 // console.log({ path });
 //console.log({ __dirname });
