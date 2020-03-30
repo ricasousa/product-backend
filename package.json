@@ -1,7 +1,7 @@
 {
-  "name": "node-app-product",
+  "name": "product-app",
   "version": "1.0.0",
-  "description": "Projeto criado para estudar NodeJS com monbodb para cadastro de produtos.",
+  "description": "Projeto criado para estudar NodeJS com MongoDB para cadastro de produtos.",
   "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js"
@@ -13,7 +13,7 @@
   ],
   "author": "Ricardo Sousa",
   "license": "ISC",
-  "homepage": "https://github.com/ricasousa/node-app#readme",
+  "homepage": "https://github.com/ricasousa/product-backend#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",

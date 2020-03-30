@@ -1,8 +1,8 @@
-# Node App Product
+# Product App
 
-Aplicação criada para estudo de API Rest com NodeJS e MongoDB.
+Aplicação criada para fins didáticos de API Rest com NodeJS e MongoDB.
 
-Esse APP consiste em um cadastro simples de produto que contém `title`, `description` e `url`.
+Esse serviço irá gerenciar listagem, exclusão, atualização  e cadastro de um produto contendo `title`, `description` e `url`.
 
 Antes de rodar a aplicação, certifique-se que a imagem do mongo esteja em sua máquina. Para isso execute os comandos abaixo:
 
