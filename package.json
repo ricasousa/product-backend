@@ -1,11 +1,16 @@
 {
-  "name": "node-app",
+  "name": "node-app-product",
   "version": "1.0.0",
-  "description": "",
+  "description": "Projeto criado para estudar NodeJS com monbodb para cadastro de produtos.",
   "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js"
   },
+  "keywords": [
+    "nodejs",
+    "mongodb",
+    "products"
+  ],
   "author": "Ricardo Sousa",
   "license": "ISC",
   "homepage": "https://github.com/ricasousa/node-app#readme",

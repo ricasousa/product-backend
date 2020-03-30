@@ -1,18 +1,20 @@
-# Node App
+# Node App Product
 
-Aplicação criada para estudo de API Rest com NodeJS.
+Aplicação criada para estudo de API Rest com NodeJS e MongoDB.
 
-Para esta aplicação foi utilizado mongodb por meio do docker.
+Esse APP consiste em um cadastro simples de produto que contém `title`, `description` e `url`.
 
-Antes de rodar a aplicação, certifique-se que a imagem do mongo está em sua máquina.
+Antes de rodar a aplicação, certifique-se que a imagem do mongo esteja em sua máquina. Para isso execute os comandos abaixo:
 
-docker ps
+```bash
+$ docker ps
 
-docker pull mongo
+$ docker pull mongo
 
-docker run --name mongodb -p 27017:27017 -d mongo
+$ docker run --name mongodb -p 27017:27017 -d mongo
+```
 
-Para visualização dos registros na base e testes das APIs, utilizei os seguintes clients:
+Para visualização dos registros criados e testes dos endpoints, utilizei os seguintes clients:
 
 - Robo 3T
 - Insomnia
